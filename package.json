@@ -1,0 +1,19 @@
+{
+  "name": "stackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start:dev": "nodemon server/index.js --ignore dist/ --ignore src/ & npm run build:dev",
+    "build:dev": "npm run build -- --watch --mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "webpack": "^5.88.2"
+  }
+}
